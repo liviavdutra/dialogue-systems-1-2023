@@ -1,6 +1,0 @@
-I have your calendar opened. How can I help you?
-For what date? 
-What time would you like to start?  
-How much time do you want to block out? 
-What shall we call this? 
-Ok. I have added this appointment to your calendar!
