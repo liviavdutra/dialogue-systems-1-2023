@@ -71,15 +71,15 @@ const grammar: Grammar = {
     intent: "None",
     entities: { day: "Monday" },
   },
-  "on Tuesday": {
+  "on tuesday": {
     intent: "None",
     entities: { day: "Tuesday" },
   },
-  "on Thursday": {
+  "on thursday": {
     intent: "None",
     entities: { day: "Thursday" },
   },
-  "on Wednesday": {
+  "on wednesday": {
     intent: "None",
     entities: { day: "Wednesday" },
   },
@@ -1381,7 +1381,7 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
               })
             },
             {
-              target: "#info",
+              target: "#information",
               cond: (context) => !!getEntity(context, "affirm"),
               actions: assign({
                 affirm: (context) => getEntity(context, "affirm")
