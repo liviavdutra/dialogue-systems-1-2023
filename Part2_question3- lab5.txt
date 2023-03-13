@@ -1,0 +1,99 @@
+What I tried to do was to use getEntityNLU function and the context.recResult[0].confidence > 0.7 and context.recResult[0].confidence <= 0.7. But I kept getting errors, the only time I didn't get errors, the stages that were supposed to be accessed to check the confidence were never activeted.
+
+Date: {
+      initial: "prompt",
+	entry: [assign({ count: 1 })],
+      on: {
+        RECOGNISED: [
+          {
+            target: "Day",
+            cond: (context ) => !!getEntity(context, "dayoftheweek") && context.recResult[0].confidence > 0.7,
+            actions: assign({
+              day: (context) => getEntity(context,"dayoftheweek"),
+            }),
+          },
+          {
+            target: "checkdate", 
+            cond: (context ) => !!getEntity(context, "dayoftheweek") && context.recResult[0].confidence <= 0.7,
+            actions: assign({
+              day: (context) => getEntity(context,"dayoftheweek")
+            }),
+          },
+          {
+            target: "#help4",
+              cond: (context) => !!getHelp(context),
+            }),
+          },
+          {
+            target: ".nomatch",
+          },
+        ],
+        TIMEOUT: ".prompt",
+      },
+      states:{
+            noinput:{
+              id: "noinput",
+              entry: [say(
+                "Sorry! I don't quite hear you!."
+              )],
+              on: { ENDSPEECH: "prompt" },
+            },
+            ...promptFunction("On which day?","The day please?","Last chance!"),
+            nomatch: {
+              id: "nomatch",
+             entry: say("Sorry, I don't know what it is. Tell me something I know!"),
+              on: { ENDSPEECH: "prompt" },
+            },
+            },
+        },
+      Checkdate: {
+      initial: "prompt",
+      on: {
+        RECOGNISED: [
+          {
+            target: "information",
+            cond: (context ) => getIntent(context) === "affirm"
+              day: (context) => context.nluResult.query.replace(/\.$/g, ""),
+            }),
+          },
+          {
+            target: "organizeMeeting", 
+            cond: (context ) => getIntent(context) === "reject",
+            actions: assign({
+              day: (context) => context.nluResult.query.replace(/\.$/g, ""),
+            }),
+          },
+          {
+            target: ".nomatch",
+          },
+        ],
+        TIMEOUT: ".prompt",
+      },
+
+
+
+      states:{
+            noinput:{
+              id: "noinput",
+              entry: [say(
+                "I'm afraid I don't hear you."
+              )],
+              on: { ENDSPEECH: "prompt" },
+            },
+            ...promptFunction("Is your meeting time correct?", "I need a confirmation","Last chance! Yes or no?"),
+            nomatch: {
+              id: "nomatch",
+          entry: say("Sorry, I don't know what it is. Tell me something I know!"),
+
+              on: { ENDSPEECH: "prompt" },
+            },
+            },
+        },
+    day: { // the next state
+      entry: send((context) => ({
+        type: "SPEAK",
+        value: `OK, ${context.day}`,
+      })),
+      on: { ENDSPEECH: "Duration" },
+      },
+...
