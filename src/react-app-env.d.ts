@@ -35,6 +35,7 @@ interface ChatInput {
 }
 
 interface SDSContext {
+  count: number;
   parameters: Parameters;
   asr: SpeechRecognition;
   tts: SpeechSynthesis;
