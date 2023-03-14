@@ -1381,7 +1381,7 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
               })
             },
             {
-              target: "#information",
+              target: "#info",
               cond: (context) => !!getEntity(context, "affirm"),
               actions: assign({
                 affirm: (context) => getEntity(context, "affirm")
