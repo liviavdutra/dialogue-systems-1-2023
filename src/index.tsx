@@ -4,10 +4,11 @@ import * as ReactDOM from "react-dom";
 import { createMachine, assign, actions, State } from "xstate";
 import { useMachine } from "@xstate/react";
 import { inspect } from "@xstate/inspect";
-import { dmMachine } from "./dmAppointment_plus";
+import { dmMachine } from "./dmTry";
 
 import createSpeechRecognitionPonyfill from "web-speech-cognitive-services/lib/SpeechServices/SpeechToText";
 import createSpeechSynthesisPonyfill from "web-speech-cognitive-services/lib/SpeechServices/TextToSpeech";
+import { WORDS } from "./words";
 
 const { send, cancel } = actions;
 
@@ -260,6 +261,7 @@ const ReactiveButton = (props: Props): JSX.Element => {
     default:
       promptText = "\u00A0";
   }
+  
   return (
     <div className="control">
       <div className="status">

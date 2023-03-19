@@ -64,6 +64,9 @@ interface SDSContext {
   topic: string;
   text:any;
   entities:any;
+  words:any;
+  userword:any;
+  word:any;
 }
 
 type SDSEvent =

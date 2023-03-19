@@ -6,7 +6,9 @@
 
 html, body {
   height: 100vh;
-  background: hsla(90deg, 25%, 85%, 0.7);
+  background: hsla(264, 94%, 21%, 0.415);
+  background: url("./name.jpg");
+  background-size: cover;
 }
 
 .App {
@@ -16,7 +18,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100vh;
-  background: hsla(90deg, 25%, 85%, 0.7);
+  background: hsla(228, 100%, 89%, 0.7);
 }
 
 .control {
@@ -28,7 +30,7 @@ html, body {
   align-items: left;
 }
 .control:hover .circle-click {
-  background: hsl(77deg, 100%, 77%);
+  background: hsl(240, 100%, 77%);
 }
 .control .prompt img {
   height: 40vh;
@@ -62,16 +64,16 @@ html, body {
   border-radius: 50px;
   cursor: pointer;
   border: 0;
-  background-color: #CD1515;
+  background-color: #8d15cd;
   z-index: 0;
 }
 .control .circle-click {
   border: 0px;
-  background-color: #fff;
+  background-color: #e2b8f7;
 }
 .control .circle-speaking {
   border: 0px;
-  background-color: #fff;
+  background-color: #dab0f6;
   animation: bordering 2s infinite;
 }
 .control .circle-recognising {
@@ -106,8 +108,10 @@ html, body {
 }
 
 .flex:hover {
-  background: hsl(77deg, 100%, 77%);
+  background: hsla(304, 100%, 77%, 0.637);
 }
+
+
 
 img {
   object-fit: contain;
