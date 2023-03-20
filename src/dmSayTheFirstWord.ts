@@ -12,6 +12,7 @@ export const TRY_WORDS ={
     user: '',
     previous:''
 }
+
 export function userTry(word:string,previousWord:string){
     word = word.toLowerCase()
     previousWord = previousWord.toLowerCase()

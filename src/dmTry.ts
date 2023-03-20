@@ -49,6 +49,10 @@ export const DATABASE = WORDS.map(item => {
 
 export const usedWords: string[] = [];
 
+export function checkRelation(word:any){
+
+}
+
 export function returnWord(word: string) {
   const wordFound = DATABASE.find((item: { word: string; }) => item.word === word);
 
@@ -72,13 +76,27 @@ export function returnWord(word: string) {
   return newWord;
 }
 
-
-
+// export function checkRelation(word:any){
+//     const wordFound = DATABASE.find((item: { word: string; }) => item.word === word);
+//     if(wordFound){
+//     const relations = wordFound.relations;
+//     if(relations.includes(word)){
+//         return true
+//     }
+//     else{
+//         return false
+//     }}
+//     else {
+//         return false
+//     }
+    
+// }
+assign({unusedWords: (_context:any) => DATABASE})
 export function firstWord() {
-    const random = Math.floor(Math.random() * DATABASE.length)
-    let wordOne = DATABASE[random].word
-    return wordOne
-}
+    const random = Math.floor(Math.random() * context.length)
+    let wordOne = context.unusedWords[random].Word
+    return wordOne}
+//the signature is firstWord(context:SDSContext)
 
 export const getEntity = (context: SDSContext, entity: string) => {
     // lowercase the utterance and remove tailing "."
@@ -113,7 +131,8 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                     {
                         target: "Introduction",
                         actions: assign({
-                            name: (context) => context.recResult[0].utterance.replace(/\.$/g, "")
+                            name: (context) => context.recResult[0].utterance.replace(/\.$/g, ""),
+                            unusedWords: (context) => DATABASE
                         }),
                     },
                     {
@@ -148,6 +167,7 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                         cond: (context) => !!getEntity(context, "reject"),
                         actions: assign({
                             reject: (context) => getEntity(context, "reject"),
+                            word: (context) => firstWord(),
                         }),
                     },
                     {
@@ -155,6 +175,7 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                         cond: (context) => !!getEntity(context, "affirm"),
                         actions: assign({
                             affirm: (context) => getEntity(context, "affirm"),
+                            word: (context) => firstWord(),
                         }),
                     },
                     {
@@ -257,18 +278,6 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
             on: {
                 RECOGNISED: [
 
-                    
-
-                    {
-                        target: "accept",
-                        //cond:,
-                        actions: assign({
-                            words: (context) => returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")),
-                        }),
-
-
-                    },
-                    
                     {
                         target: "Userlost",
                         cond: (context) => returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")) ==="YOU LOST",
@@ -281,6 +290,18 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                         }),
                         
                     },
+
+                    {
+                        target: "accept",
+                        //cond:,
+                        actions: assign({
+                            words: (context) => returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")),
+                        }),
+
+
+                    },
+                    
+                    
 
                     // first you can assign WORDS to context.words. Then, you can select a value 
                     // (say, randomly or based on certain criteria) from context.words. Then you remove it from context.words
@@ -332,17 +353,6 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                 on: {
                     RECOGNISED: [
 
-                      
-                        
-                        {
-                            target: "gametwo",
-
-                            actions: assign({
-                                words: (context) => returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")),
-                            }),
-
-
-                        },
                         {
                             target: "Userlost",
                             cond: (context) => returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")) ==="YOU LOST",
@@ -355,6 +365,17 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                             }),
                             
                         },
+                        
+                        {
+                            target: "gametwo",
+
+                            actions: assign({
+                                words: (context) => returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")),
+                            }),
+
+
+                        },
+                        
 
                         // {
                         //     target: "Computerlost",

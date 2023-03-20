@@ -45,34 +45,51 @@ export const DATABASE = WORDS.map(item => {
         relations: item.Relations.split(",").map(item => item.toLowerCase())
     }
 })
-export const USED_WORDS = ['']
+// export const USED_WORDS = ['']
 
-export function userTry(word: string, previousWord: string) {
-    word = word.toLowerCase()
-    previousWord = previousWord.toLowerCase()
-    if (USED_WORDS.includes(word)) {
-        return 'You lost'
-    }
-    USED_WORDS.push(word)
-    const dataWord = DATABASE.find(item => item.word == previousWord)
+// export function userTry(word: string, previousWord: string) {
+//     word = word.toLowerCase()
+//     previousWord = previousWord.toLowerCase()
+//     if (USED_WORDS.includes(word)) {
+//         return 'You lost'
+//     }
+//     USED_WORDS.push(word)
+//     const dataWord = DATABASE.find(item => item.word == previousWord)
 
-    if (dataWord!.relations.includes(word)) {
-        return word
-    } else {
-        return 'YOU LOST'
+//     if (dataWord!.relations.includes(word)) {
+//         return word
+//     } else {
+//         return 'YOU LOST'
+//     }
+// }
+
+export function checkRelation(systemword:any, word:any){
+    const wordGiven = DATABASE.find((item: { word: string; }) => item.word === systemword);
+    //console.log(wordGiven.relations)
+    if (wordGiven) {
+        //console.log(wordGiven)
+    const relations = wordGiven.relations;
+    if(relations.includes(word)){
+        return true
     }
+    else{
+        return false
+    }}
+    else {
+        return false
+    }
+    
 }
 
 export function returnWord(word: string) { //call function with only one argument → context.recResult[0].utterance
     const wordFound = DATABASE.find((item: { word: string; }) => item.word === word);
-    if (!wordFound) {
-    return "YOU LOST";
-  }
+    if (wordFound){
   const relations = wordFound.relations;
   const randomIndex = Math.floor(Math.random() * relations.length);
   const newWord = relations[randomIndex];
-  DATABASE.splice(DATABASE.indexOf(wordFound), 1)
+  //DATABASE.splice(DATABASE.indexOf(wordFound), 1)
   return newWord;
+    }
 }
 
 
@@ -277,20 +294,19 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                 RECOGNISED: [
 
                     
-
+                    
                     {
                         target: "accept",
-                        //cond:,
+                        cond: (context) => checkRelation(context.recResult[0].utterance.toLowerCase().replace(".",""),context.word)===true,
                         actions: assign({
-                            words: (context) => returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")),
+                            words: (context) =>returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")),
                         }),
 
 
                     },
-                    
                     {
                         target: "Userlost",
-                        cond: (context) => returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")) ==="YOU LOST",
+                        cond: (context) => checkRelation(context.word,context.recResult[0].utterance.toLowerCase().replace(".",""))===false,
                         actions: assign({
                             userword: (context) => {
                                
@@ -332,20 +348,9 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                 on: {
                     RECOGNISED: [
 
-                      
-                        
-                        {
-                            target: "gametwo",
-
-                            actions: assign({
-                                words: (context) => returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")),
-                            }),
-
-
-                        },
                         {
                             target: "Userlost",
-                            cond: (context) => returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")) ==="YOU LOST",
+                            cond: (context) => checkRelation(context.word,context.recResult[0].utterance.toLowerCase().replace(".",""))===false,
                             actions: assign({
                                 userword: (context) => {
                                    
@@ -355,6 +360,16 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                             }),
                             
                         },
+                        {
+                            target: "gametwo",
+                            //cond: (context) => checkRelation(context.recResult[0].utterance.toLowerCase().replace(".",""))===true,
+                            actions: assign({
+                                words: (context) => returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")),
+                            }),
+
+
+                        },
+                        
                        
                         // first you can assign WORDS to context.words. Then, you can select a value 
                         // (say, randomly or based on certain criteria) from context.words. Then you remove it from context.words
