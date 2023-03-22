@@ -149,135 +149,135 @@ export const WORDS =[
   },
   {
     Word: "belt",
-    Relations: "bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "bikini",
-    Relations: "belt,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "blouse",
-    Relations: "belt,bikini,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "boots",
-    Relations: "belt,bikini,blouse,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "cap",
-    Relations: "belt,bikini,blouse,boots,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "coat",
-    Relations: "belt,bikini,blouse,boots,cap,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "dress",
-    Relations: "belt,bikini,blouse,boots,cap,coat,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "gloves",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "hat",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "hoodie",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "jacket",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "jeans",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "pajamas",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "panties",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "pants",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "raincoat",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "scarf",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "shirt",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "shoes",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "shorts",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "skirt",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "socks",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "suit",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "sweater",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "sweatpants",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "sweatshirt",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimsuit,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimsuit,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "swimming trunks",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,tie,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,tie,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "swimsuit",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,t-shirt,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,t-shirt,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "tie",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,underpants,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,underpants,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "t-shirt",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "underpants",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,uniform,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,uniform,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "uniform",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,vest"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,vest,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "vest",
-    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform"
+    Relations: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "Anger",
@@ -345,7 +345,7 @@ export const WORDS =[
   },
   {
     Word: "Love",
-    Relations: "Anger,fear,horror,hysteria,panic,shock,terror,Anxiety,Joy,Amusement,bliss,euphoria,happiness,satisfaction,Contentment,pleasure, Adoration,affection,caring,compassion,fondness,tenderness,Sadness,Disappointment,melancholy,sadness,Shame,hurt,Pity,sympathy,Surprise"
+    Relations: "Anger,fear,horror,hysteria,panic,shock,terror,Anxiety,Joy,Amusement,bliss,euphoria,happiness,satisfaction,Contentment,pleasure,Adoration,affection,caring,compassion,fondness,tenderness,Sadness,Disappointment,melancholy,sadness,Shame,hurt,Pity,sympathy,Surprise"
   },
   {
     Word: "Adoration,",

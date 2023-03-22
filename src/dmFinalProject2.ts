@@ -80,10 +80,29 @@ export function checkRelation(systemword:any, word:any){
     }
     
 }
+// (userWord, systemWord)
+export function checkRelation2(context: SDSContext, userWord:any){
+    const wordGiven = context.unusedWords.find((item: { word: string; }) => item.word === userWord);
+    //console.log(wordGiven.relations)
+    if (wordGiven) {
+        //console.log(wordGiven)
+    const relations = wordGiven.relations;
+    if(relations.includes(context.word)){
+        return true
+    }
+    else{
+        return false
+    }}
+    else {
+        return false
+    }
+    
+}
+
 
 export function returnWord(word: string) { //call function with only one argument → context.recResult[0].utterance
     const wordFound = DATABASE.find((item: { word: string; }) => item.word === word);
-    if (wordFound){
+    if (wordFound) {
   const relations = wordFound.relations;
   const randomIndex = Math.floor(Math.random() * relations.length);
   const newWord = relations[randomIndex];
@@ -93,22 +112,41 @@ export function returnWord(word: string) { //call function with only one argumen
 }
 
 
+// blue -> white, orange, [purple] -> white, orange, blue
 
 
-// export function computerTry(word: string) {
-//     word = word.toLowerCase();
-//     if (word) {
-//         return returnWord(word)
-//     }
-//     else {
-//         return 'You win'
-//     }
-// }
+// next word
+export function returnWord2(context:SDSContext, userWord: string) { //call function with only one argument → context.recResult[0].utterance
+    const wordFound = context.unusedWords.find((item: { word: string; }) => item.word === userWord);
+    if (wordFound) {
+      const relations = wordFound.relations;
 
-export function firstWord() {
-    const random = Math.floor(Math.random() * DATABASE.length)
-    let wordOne = DATABASE[random].word
-    
+      // to remove used words from the relations
+      const allowedRelations = relations.filter((item: string) => context.unusedWords.includes(item))
+  const randomIndex = Math.floor(Math.random() * allowedRelations.length);
+  const newWord = allowedRelations[randomIndex];
+  //DATABASE.splice(DATABASE.indexOf(wordFound), 1)
+  return newWord;
+    }
+}
+console.log(returnWord2)
+
+
+
+
+export function computerTry(word: string) {
+    word = word.toLowerCase();
+    if (word) {
+        return returnWord(word)
+    }
+    else {
+        return 'You win'
+    }
+}
+
+export function firstWord(context:SDSContext) {
+    const random = Math.floor(Math.random() * context.unusedWords.length)
+    let wordOne = context.unusedWords[random].word
     return wordOne
 }
 
@@ -141,7 +179,8 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
         },
         whoareyou: {
             id: "whoareyou",
-            initial: "prompt",
+          initial: "prompt",
+	  entry: assign({unusedWords : (context) => DATABASE}),
             on: {
                 RECOGNISED: [
                     {
@@ -180,17 +219,21 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                     {
                         target: "denyInstructions",
                         cond: (context) => !!getEntity(context, "reject"),
-                        actions: assign({
+                        actions: [assign({
                             reject: (context) => getEntity(context, "reject"),
-                            word: (context) => firstWord(),
+                            word: (context) => firstWord(context),
                         }),
+                        assign({
+                            unusedWords: (context) => context.unusedWords.filter((item:any) => item.word !== context.words)
+                    })
+                ]
                     },
                     {
                         target: "acceptInstructions",
                         cond: (context) => !!getEntity(context, "affirm"),
                         actions: assign({
                             affirm: (context) => getEntity(context, "affirm"),
-                            word: (context) => firstWord(),
+                            word: (context) => firstWord(context),
                         }),
                     },
                     {
@@ -240,7 +283,7 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                         cond: (context) => !!getEntity(context, "reject"),
                         actions: assign({
                             reject: (context) => getEntity(context, "reject"),
-                            word: (context) => firstWord(),
+                            word: (context) => firstWord(context),
                         }),
                     },
                     {
@@ -248,7 +291,7 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                         cond: (context) => !!getEntity(context, "affirm"),
                         actions: assign({
                             affirm: (context) => getEntity(context, "affirm"),
-                            word: (context) => firstWord()
+                            word: (context) => firstWord(context)
                         }),
                     },
 
@@ -262,7 +305,7 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                 prompt: {
                     entry: send((context) => ({
                         type: "SPEAK",
-                        value: `GIVE INSTRUCTIONS LATER! Do you want to start playing? I just need a yes or no ${context.name}`,
+                        value: `You probably have already played this game before or head about it! So that is how ir works: I will say a word and you need to say back to me the first word that comes to your mind. But of course it needs to have some kind of relation to the previous word. It will be game over when you say a word irrelated to the previous. So, for example, if I say dog you could say cat back! It is very simple! We also will have a try round before we start for real! Do you want to start playing ${context.name}?`,
                     })),
                     on: { ENDSPEECH: "ask" },
                 },
@@ -283,7 +326,7 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
         },
         playnow: {
             entry: [
-                say("Ok!Here we go!")
+                say("Ok!Try round it is!")
             ],
             on: { ENDSPEECH: "gamestart" },
         },
@@ -297,16 +340,16 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                     
                     {
                         target: "accept",
-                        cond: (context) => checkRelation(context.recResult[0].utterance.toLowerCase().replace(".",""),context.word)===true,
+                        cond: (context) => checkRelation2(context,context.recResult[0].utterance.toLowerCase().replace(".",""))===true,
                         actions: assign({
-                            words: (context) =>returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")),
+                          words: (context) =>returnWord2(context,context.recResult[0].utterance.toLowerCase().replace(".","")),
                         }),
-
-
+			  
                     },
+			
                     {
                         target: "Userlost",
-                        cond: (context) => checkRelation(context.word,context.recResult[0].utterance.toLowerCase().replace(".",""))===false,
+                        cond: (context) => checkRelation2(context,context.recResult[0].utterance.toLowerCase().replace(".",""))===false,
                         actions: assign({
                             userword: (context) => {
                                
@@ -350,7 +393,7 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
 
                         {
                             target: "Userlost",
-                            cond: (context) => checkRelation(context.word,context.recResult[0].utterance.toLowerCase().replace(".",""))===false,
+                            cond: (context) => checkRelation2(context,context.recResult[0].utterance.toLowerCase().replace(".",""))===false,
                             actions: assign({
                                 userword: (context) => {
                                    
@@ -360,46 +403,20 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                             }),
                             
                         },
+                    
                         {
                             target: "gametwo",
-                            //cond: (context) => checkRelation(context.recResult[0].utterance.toLowerCase().replace(".",""))===true,
+                            cond: (context) => checkRelation2(context,context.recResult[0].utterance.toLowerCase().replace(".",""))===true,
                             actions: assign({
-                                words: (context) => returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")),
+                                words: (context) => returnWord2(context,context.recResult[0].utterance.toLowerCase().replace(".","")),
+                                
                             }),
 
-
+                            //assign({
+                                //unusedWords: (context) => context.unusedWords.filter((item:any) => item.word !== context.words)
+                       // })
+                    //]
                         },
-                        
-                       
-                        // first you can assign WORDS to context.words. Then, you can select a value 
-                        // (say, randomly or based on certain criteria) from context.words. Then you remove it from context.words
-                        //  (assign context.words.filter(item => item != value). )
-                        // // {
-                        //     target: "Userlost",
-                        //     actions: assign({
-                        //         userword: (context) => {
-                        //             TRY_WORDS.user = context.recResult[0].utterance
-                        //             console.log(TRY_WORDS)
-                        //             return context.recResult[0].utterance
-                        //         },
-
-                        //     }),
-                        //     cond: (context) => userTry(TRY_WORDS.user.toLowerCase(),TRY_WORDS.previous.toLowerCase()) === 'You lost',
-
-                        // },
-
-                        // {
-                        //     target: "Computerlost",
-                        //     actions: assign({
-                        //         userword: (context) => {
-                        //             TRY_WORDS.user = context.recResult[0].utterance
-                        //             return context.recResult[0].utterance
-                        //         },
-
-                        //     }),
-                        //     cond: (context) => userTry(TRY_WORDS.user.toLowerCase(),TRY_WORDS.previous.toLowerCase()) === 'You win',
-
-                        // },
 
 
                         {
@@ -443,18 +460,11 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                 id: "Userlost",
                 entry: send((context) => ({
                     type: "SPEAK",
-                    value: `You lost! Let's see how many points you got!`
+                    value: `Game Over! Let's see how many points you got!`
                 })),
                 on: { ENDSPEECH: "init" },
             },
-            // Computerlost: {
-            //     id: "Computerlost",
-            //     entry: send((context) => ({
-            //         type: "SPEAK",
-            //         value: `You win! Let's see how many points you got`
-            //     })),
-            //     on: { ENDSPEECH: "init" },
-            // },
+           
         },
 
     };

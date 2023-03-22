@@ -7,7 +7,7 @@
 html, body {
   height: 100vh;
   background: hsla(264, 94%, 21%, 0.415);
-  background: url("./name.jpg");
+  background: url("./pic.jpeg");
   background-size: cover;
 }
 

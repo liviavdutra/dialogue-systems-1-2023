@@ -1,5 +1,5 @@
 import { MachineConfig, send, Action, assign, StatesConfig, EventObject, BaseActionObject } from "xstate";
-import { WORDS } from "./words"
+import { WORDS } from "./wordsfinal"
 
 function say(text: string): Action<SDSContext, SDSEvent> {
     return send((_context: SDSContext) => ({ type: "SPEAK", value: text }));
@@ -42,7 +42,7 @@ const grammar: Grammar = {
 export const DATABASE = WORDS.map(item => {
     return {
         word: item.Word.toLowerCase(),
-        relations: item.Relations.split(",").map(item => item.toLowerCase())
+        relations: item.Relation.split(",").map(item => item.toLowerCase())
     }
 })
 // export const USED_WORDS = ['']
@@ -63,52 +63,99 @@ export const DATABASE = WORDS.map(item => {
 //     }
 // }
 
-export function checkRelation(systemword:any, word:any){
+export function checkRelation(systemword: any, word: any) {
     const wordGiven = DATABASE.find((item: { word: string; }) => item.word === systemword);
     //console.log(wordGiven.relations)
     if (wordGiven) {
         //console.log(wordGiven)
-    const relations = wordGiven.relations;
-    if(relations.includes(word)){
-        return true
+        const relations = wordGiven.relations;
+        if (relations.includes(word)) {
+            return true
+        }
+        else {
+            return false
+        }
     }
-    else{
-        return false
-    }}
     else {
         return false
     }
-    
+
 }
 
 export function returnWord(word: string) { //call function with only one argument → context.recResult[0].utterance
     const wordFound = DATABASE.find((item: { word: string; }) => item.word === word);
-    if (wordFound){
-  const relations = wordFound.relations;
-  const randomIndex = Math.floor(Math.random() * relations.length);
-  const newWord = relations[randomIndex];
-  //DATABASE.splice(DATABASE.indexOf(wordFound), 1)
-  return newWord;
+    if (wordFound) {
+        const relations = wordFound.relations;
+        const randomIndex = Math.floor(Math.random() * relations.length);
+        const newWord = relations[randomIndex];
+        //DATABASE.splice(DATABASE.indexOf(wordFound), 1)
+        return newWord;
+    }
+}
+// (userWord, systemWord)
+export function checkRelation2(context: SDSContext, userWord: any) {
+    const wordGiven = context.unusedWords.find((item: { word: string; }) => item.word === userWord);
+    //console.log(wordGiven)
+    if (wordGiven) {
+        console.log(wordGiven)
+        const relations = wordGiven.relations;
+
+        if (relations.includes(context.word)) {
+            console.log(relations)
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    else {
+        return false
+    }
+
+}
+
+// blue -> white, orange, [purple] -> white, orange, blue
+
+
+// next word
+export function returnWord2(context: SDSContext, userWord: string) { //call function with only one argument → context.recResult[0].utterance
+    const wordFound = context.unusedWords.find((item: { word: string; }) => item.word === userWord);
+    console.log(wordFound)
+   
+        if (wordFound) {
+        const relations = wordFound.relations;
+        let unusedwords = context.unusedWords.map((item: { word: any; }) =>{
+            return item.word})
+        
+        // to remove used words from the relations
+        const allowedRelations = relations.filter((item: any) => unusedwords.includes(item))
+        console.log(allowedRelations)
+        const randomIndex = Math.floor(Math.random() * relations.length);
+        const newWord = relations[randomIndex];
+        console.log("my variable var is equal to", unusedwords)
+        console.log(newWord)
+        //context.unusedWords.splice(context.unusedWords.indexOf(wordFound), 1)
+        return newWord;
+    }
+}
+console.log(returnWord2)
+
+
+
+
+export function computerTry(word: string) {
+    word = word.toLowerCase();
+    if (word) {
+        return returnWord(word)
+    }
+    else {
+        return 'You win'
     }
 }
 
-
-
-
-// export function computerTry(word: string) {
-//     word = word.toLowerCase();
-//     if (word) {
-//         return returnWord(word)
-//     }
-//     else {
-//         return 'You win'
-//     }
-// }
-
-export function firstWord() {
-    const random = Math.floor(Math.random() * DATABASE.length)
-    let wordOne = DATABASE[random].word
-    
+export function firstWord(context: SDSContext) {
+    const random = Math.floor(Math.random() * context.unusedWords.length)
+    let wordOne = context.unusedWords[random].word
     return wordOne
 }
 
@@ -142,12 +189,15 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
         whoareyou: {
             id: "whoareyou",
             initial: "prompt",
+            //entry: assign({unusedWords : (context) => DATABASE}),
             on: {
                 RECOGNISED: [
                     {
                         target: "Introduction",
                         actions: assign({
-                            name: (context) => context.recResult[0].utterance.replace(/\.$/g, "")
+                            name: (context) => context.recResult[0].utterance.replace(/\.$/g, ""),
+                            unusedWords: (context) => DATABASE,
+                            
                         }),
                     },
                     {
@@ -175,22 +225,27 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
         Introduction: {
             id: "Introduction",
             initial: "prompt",
+            entry: [assign({score: (context) => 0 })],
             on: {
                 RECOGNISED: [
                     {
                         target: "denyInstructions",
                         cond: (context) => !!getEntity(context, "reject"),
-                        actions: assign({
+                        actions: [assign({
                             reject: (context) => getEntity(context, "reject"),
-                            word: (context) => firstWord(),
+                            word: (context) => firstWord(context),
                         }),
+                        assign({
+                            unusedWords: (context) => context.unusedWords.filter((item: any) => item.word !== context.words)
+                        })
+                        ]
                     },
                     {
                         target: "acceptInstructions",
                         cond: (context) => !!getEntity(context, "affirm"),
                         actions: assign({
                             affirm: (context) => getEntity(context, "affirm"),
-                            word: (context) => firstWord(),
+                            word: (context) => firstWord(context),
                         }),
                     },
                     {
@@ -240,7 +295,7 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                         cond: (context) => !!getEntity(context, "reject"),
                         actions: assign({
                             reject: (context) => getEntity(context, "reject"),
-                            word: (context) => firstWord(),
+                            word: (context) => firstWord(context),
                         }),
                     },
                     {
@@ -248,7 +303,7 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                         cond: (context) => !!getEntity(context, "affirm"),
                         actions: assign({
                             affirm: (context) => getEntity(context, "affirm"),
-                            word: (context) => firstWord()
+                            word: (context) => firstWord(context)
                         }),
                     },
 
@@ -293,28 +348,28 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
             on: {
                 RECOGNISED: [
 
-                    
-                    
+
+
                     {
                         target: "accept",
-                        cond: (context) => checkRelation(context.recResult[0].utterance.toLowerCase().replace(".",""),context.word)===true,
+                        cond: (context) => checkRelation2(context, context.recResult[0].utterance.toLowerCase().replace(".", "")) === true,
                         actions: assign({
-                            words: (context) =>returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")),
+                            words: (context) => returnWord2(context, context.recResult[0].utterance.toLowerCase().replace(".", "")),
                         }),
 
-
                     },
+
                     {
                         target: "Userlost",
-                        cond: (context) => checkRelation(context.word,context.recResult[0].utterance.toLowerCase().replace(".",""))===false,
+                        cond: (context) => checkRelation2(context, context.recResult[0].utterance.toLowerCase().replace(".", "")) === false,
                         actions: assign({
                             userword: (context) => {
-                               
+
                                 //return context.recResult[0].utterance
                             },
 
                         }),
-                        
+
                     },
 
                     {
@@ -342,119 +397,94 @@ export const dmMachine: MachineConfig<SDSContext, any, SDSEvent> = {
                 },
             },
         },
-            gametwo: {
-                id: "gametwo",
-                initial: "prompt",
-                on: {
-                    RECOGNISED: [
+        gametwo: {
+            id: "gametwo",
+            initial: "prompt",
+            entry: [assign({score: (context) => context.score +10})],
+            on: {
+                RECOGNISED: [
 
-                        {
-                            target: "Userlost",
-                            cond: (context) => checkRelation(context.word,context.recResult[0].utterance.toLowerCase().replace(".",""))===false,
-                            actions: assign({
-                                userword: (context) => {
-                                   
-                                    //return context.recResult[0].utterance
-                                },
-    
-                            }),
-                            
-                        },
-                        {
-                            target: "gametwo",
-                            //cond: (context) => checkRelation(context.recResult[0].utterance.toLowerCase().replace(".",""))===true,
-                            actions: assign({
-                                words: (context) => returnWord(context.recResult[0].utterance.toLowerCase().replace(".","")),
-                            }),
+                    {
+                        target: "Userlost",
+                        cond: (context) => checkRelation2(context, context.recResult[0].utterance.toLowerCase().replace(".", "")) === false,
+                        actions: assign({
+                            userword: (context) => {
 
+                                //return context.recResult[0].utterance
+                            },
 
-                        },
-                        
-                       
-                        // first you can assign WORDS to context.words. Then, you can select a value 
-                        // (say, randomly or based on certain criteria) from context.words. Then you remove it from context.words
-                        //  (assign context.words.filter(item => item != value). )
-                        // // {
-                        //     target: "Userlost",
-                        //     actions: assign({
-                        //         userword: (context) => {
-                        //             TRY_WORDS.user = context.recResult[0].utterance
-                        //             console.log(TRY_WORDS)
-                        //             return context.recResult[0].utterance
-                        //         },
+                        }),
 
-                        //     }),
-                        //     cond: (context) => userTry(TRY_WORDS.user.toLowerCase(),TRY_WORDS.previous.toLowerCase()) === 'You lost',
+                    },
 
-                        // },
+                    {
+                        target: "gametwo",
+                        cond: (context) => checkRelation2(context, context.recResult[0].utterance.toLowerCase().replace(".", "")) === true,
+                        actions: assign({
+                            words: (context) => returnWord2(context, context.recResult[0].utterance.toLowerCase().replace(".", "")),
 
-                        // {
-                        //     target: "Computerlost",
-                        //     actions: assign({
-                        //         userword: (context) => {
-                        //             TRY_WORDS.user = context.recResult[0].utterance
-                        //             return context.recResult[0].utterance
-                        //         },
+                        }),
 
-                        //     }),
-                        //     cond: (context) => userTry(TRY_WORDS.user.toLowerCase(),TRY_WORDS.previous.toLowerCase()) === 'You win',
+                        //assign({
+                        //unusedWords: (context) => context.unusedWords.filter((item:any) => item.word !== context.words)
+                        // })
+                        //]
+                    },
 
-                        // },
-
-
-                        {
-                            target: ".noinput",
-                        },
-                    ],
-                    TIMEOUT: ".prompt",
+                    {
+                        target: ".noinput",
+                    },
+                ],
+                TIMEOUT: ".prompt",
+            },
+            states: {
+                prompt: {
+                    entry: send((context) => ({
+                        type: "SPEAK",
+                        value: ` ${context.words}`
+                    })),
+                    on: { ENDSPEECH: "ask" },
                 },
-                states: {
-                    prompt: {
-                        entry: send((context) => ({
-                            type: "SPEAK",
-                            value: ` ${context.words}`
-                        })),
-                        on: { ENDSPEECH: "ask" },
-                    },
-                    ask: {
-                        entry: send("LISTEN"),
-                    },
-                    noinput: {
-                        entry: say(
-                            "Sorry, I don't know what it is. Tell me something I know!"
-                        ),
-                        on: { ENDSPEECH: "ask" },
-                    },
+                ask: {
+                    entry: send("LISTEN"),
                 },
-
-            
-            },
-            accept: {
-                id: "accept",
-
-                entry: send((context) => ({
-                    type: "SPEAK",
-                    value: `You got it!Let's start playing for real now!`
-                })),
-                on: { ENDSPEECH: "gametwo" },
+                noinput: {
+                    entry: say(
+                        "Sorry, I don't know what it is. Tell me something I know!"
+                    ),
+                    on: { ENDSPEECH: "ask" },
+                },
             },
 
-            Userlost: {
-                id: "Userlost",
-                entry: send((context) => ({
-                    type: "SPEAK",
-                    value: `You lost! Let's see how many points you got!`
-                })),
-                on: { ENDSPEECH: "init" },
-            },
-            // Computerlost: {
-            //     id: "Computerlost",
-            //     entry: send((context) => ({
-            //         type: "SPEAK",
-            //         value: `You win! Let's see how many points you got`
-            //     })),
-            //     on: { ENDSPEECH: "init" },
-            // },
+
+        },
+        accept: {
+            id: "accept",
+
+            entry: send((context) => ({
+                type: "SPEAK",
+                value: `You got it!Let's start playing for real now!`
+            })),
+            on: { ENDSPEECH: "gametwo" },
         },
 
-    };
+        Userlost: {
+            id: "Userlost",
+            entry: send((context) => ({
+                type: "SPEAK",
+                value: `You lost! Let's see how many points you got!`
+            })),
+            on: { ENDSPEECH: "points" },
+        },
+        points: {
+            id: "points",
+            entry: send((context) => ({
+                type: "SPEAK",
+                value: `Your score is ${context.score}!`
+            })),
+            on: { ENDSPEECH: "init" },
+        },
+       
+    },
+
+};
