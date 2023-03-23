@@ -157,131 +157,131 @@ export const WORDS =[
   },
   {
     Word: "blouse",
-    Relation: "belt,bikini,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "chest,belt,bikini,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "boots",
-    Relation: "belt,bikini,blouse,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "foot,toe,belt,bikini,blouse,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "cap",
-    Relation: "belt,bikini,blouse,boots,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "head,belt,bikini,blouse,boots,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "coat",
-    Relation: "belt,bikini,blouse,boots,cap,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "chest,shoulders,belt,bikini,blouse,boots,cap,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "dress",
-    Relation: "belt,bikini,blouse,boots,cap,coat,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "chest,belt,bikini,blouse,boots,cap,coat,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "gloves",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "hand,fingers,belt,bikini,blouse,boots,cap,coat,dress,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "hat",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "head,belt,bikini,blouse,boots,cap,coat,dress,gloves,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "hoodie",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "chest,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "jacket",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "chest,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "jeans",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "leg,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "pajamas",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "leg,chest,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "panties",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "leg,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "pants",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "leg,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "raincoat",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "chest,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "scarf",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "neck,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "shirt",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "chest,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "shoes",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "foot,toe,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "shorts",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "leg,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "skirt",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "leg,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "socks",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "feet,toe,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "suit",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "chest,leg,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "sweater",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "chest,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "sweatpants",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "leg,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "sweatshirt",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "chest,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimsuit,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "swimming trunks",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "leg,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,tie,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "swimsuit",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "chest,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,t-shirt,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "tie",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "chest,neck,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,underpants,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "t-shirt",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "chest,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "underpants",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "leg,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,uniform,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "uniform",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "leg,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,vest,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "vest",
-    Relation: "belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
+    Relation: "chest,belt,bikini,blouse,boots,cap,coat,dress,gloves,hat,hoodie,jacket,jeans,pajamas,panties,pants,raincoat,scarf,shirt,shoes,shorts,skirt,socks,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,underpants,uniform,white,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta,"
   },
   {
     Word: "Anger",
-    Relation: "fear,horror,hysteria,panic,shock,terror,Anxiety,Amusement,euphoria,satisfaction,Contentment,pleasure,Love, Adoration,caring,compassion,Sadness,Disappointment,melancholy,Shame,hurt,Pity,sympathy,Surprise"
+    Relation: "fear,horror,hysteria,panic,shock,terror,Anxiety,Amusement,euphoria,satisfaction,Contentment,pleasure,Love,caring,compassion,Sadness,Disappointment,melancholy,Shame,hurt,Pity,sympathy,Surprise"
   },
   {
     Word: "fear",
@@ -521,7 +521,6 @@ export const WORDS =[
     Word: "moon",
     Relation: "arctic,beach,cave,forest,island,lake,mountain,ocean,river,sea,valley,animal,bush,flower,grass,mud,plants,rock,sand,dirt,tree,waterfall,wave,autumn,clouds,ice,rain,season,sky,snow,spring,stars,summer,sun,winter"
   },
-  
   {
     Word: "rain",
     Relation: "arctic,beach,cave,forest,island,lake,mountain,ocean,river,sea,valley,animal,bush,flower,grass,mud,plants,rock,sand,dirt,tree,waterfall,wave,autumn,clouds,ice,moon,season,sky,snow,spring,stars,summer,sun,winter"
@@ -548,7 +547,7 @@ export const WORDS =[
   },
   {
     Word: "summer",
-    Relation: "arctic,beach,cave,forest,island,lake,mountain,ocean,river,sea,valley,animal,bush,flower,grass,mud,plants,rock,sand,dirt,tree,waterfall,wave,autumn,clouds,ice,moon,rain,season,sky,snow,spring,stars,sun,winter"
+    Relation: "beach,island,ocean,river,sea,flower,sand,tree,waterfall,wave,autumn,clouds,rain,season,sky,spring,stars,sun,winter"
   },
   {
     Word: "sun",
@@ -560,95 +559,95 @@ export const WORDS =[
   },
   {
     Word: "apple",
-    Relation: "pineapple,watermelon,banana,green apple,blueberry,strawberry,cherry,clementine,grape,lemon,mango,tomato"
+    Relation: "pineapple,watermelon,banana,green apple,blueberry,strawberry,cherry,clementine,grape,lemon,mango,tomato,mouth,stomach,red"
   },
   {
     Word: "pineapple",
-    Relation: "apple,watermelon,banana,green apple,blueberry,strawberry,cherry,clementine,grape,lemon,mango,tomato"
+    Relation: "apple,watermelon,banana,green apple,blueberry,strawberry,cherry,clementine,grape,lemon,mango,tomato,mouth,stomach,yellow"
   },
   {
     Word: "watermelon",
-    Relation: "apple,pineapple,banana,green apple,blueberry,strawberry,cherry,clementine,grape,lemon,mango,tomato"
+    Relation: "apple,pineapple,banana,green apple,blueberry,strawberry,cherry,clementine,grape,lemon,mango,tomato,mouth,stomach,red,green"
   },
   {
     Word: "banana",
-    Relation: "apple,pineapple,watermelon,green apple,blueberry,strawberry,cherry,clementine,grape,lemon,mango,tomato"
+    Relation: "apple,pineapple,watermelon,green apple,blueberry,strawberry,cherry,clementine,grape,lemon,mango,tomato,mouth,stomach,yellow"
   },
   {
     Word: "green apple",
-    Relation: "apple,pineapple,watermelon,banana,blueberry,strawberry,cherry,clementine,grape,lemon,mango,tomato"
+    Relation: "apple,pineapple,watermelon,banana,blueberry,strawberry,cherry,clementine,grape,lemon,mango,tomato,mouth,stomach,green"
   },
   {
     Word: "potato",
-    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,rice,meat,salad,tomato,beans,"
+    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,rice,meat,salad,tomato,beans,mouth,stomach,brown,purple,yellow"
   },
   {
     Word: "rice",
-    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,meat,salad,tomato,beans,"
+    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,meat,salad,tomato,beans,mouth,stomach,white"
   },
   {
     Word: "meat",
-    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,salad,tomato,beans,"
+    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,salad,tomato,beans,mouth,stomach"
   },
   {
     Word: "salad",
-    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,tomato,beans,"
+    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,tomato,beans,mouth,stomach,green"
   },
   {
     Word: "tomato",
-    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,beans,"
+    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,beans,mouth,stomach,red"
   },
   {
     Word: "beans",
-    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato"
+    Relation: "red,black,brown,egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,mouth,stomach"
   },
   {
     Word: "blueberry",
-    Relation: "apple,pineapple,watermelon,banana,green apple,strawberry,cherry,clementine,grape,lemon,mango,tomato"
+    Relation: ",purple,apple,pineapple,watermelon,banana,green apple,strawberry,cherry,clementine,grape,lemon,mango,tomato,mouth,stomach"
   },
   {
     Word: "strawberry",
-    Relation: "apple,pineapple,watermelon,banana,green apple,blueberry,cherry,clementine,grape,lemon,mango,tomato"
+    Relation: "red,apple,pineapple,watermelon,banana,green apple,blueberry,cherry,clementine,grape,lemon,mango,tomato,mouth,stomach"
   },
   {
     Word: "cherry",
-    Relation: "apple,pineapple,watermelon,banana,green apple,blueberry,strawberry,clementine,grape,lemon,mango,tomato"
+    Relation: "red,apple,pineapple,watermelon,banana,green apple,blueberry,strawberry,clementine,grape,lemon,mango,tomato,mouth,stomach"
   },
   {
     Word: "clementine",
-    Relation: "apple,pineapple,watermelon,banana,green apple,blueberry,strawberry,cherry,grape,lemon,mango,tomato"
+    Relation: "orange,apple,pineapple,watermelon,banana,green apple,blueberry,strawberry,cherry,grape,lemon,mango,tomato,mouth,stomach"
   },
   {
     Word: "grape",
-    Relation: "apple,pineapple,watermelon,banana,green apple,blueberry,strawberry,cherry,clementine,lemon,mango,tomato"
+    Relation: "apple,pineapple,watermelon,banana,green apple,blueberry,strawberry,cherry,clementine,lemon,mango,tomato,mouth,stomach"
   },
   {
     Word: "lemon",
-    Relation: "apple,pineapple,watermelon,banana,green apple,blueberry,strawberry,cherry,clementine,grape,mango,tomato"
+    Relation: "green,apple,pineapple,watermelon,banana,green apple,blueberry,strawberry,cherry,clementine,grape,mango,tomato,mouth,stomach"
   },
   {
     Word: "mango",
-    Relation: "apple,pineapple,watermelon,banana,green apple,blueberry,strawberry,cherry,clementine,grape,lemon,"
+    Relation: "orange,red,yellow,apple,pineapple,watermelon,banana,green apple,blueberry,strawberry,cherry,clementine,grape,lemon,mouth,stomach"
   },
   {
     Word: "egg",
-    Relation: "coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,"
+    Relation: "white,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,mouth,stomach"
   },
   {
     Word: "coffee",
-    Relation: "egg,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,"
+    Relation: "black,brown,egg,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,mouth,stomach"
   },
   {
     Word: "milk",
-    Relation: "egg,coffee,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,"
+    Relation: "white,egg,coffee,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,mouth,stomach"
   },
   {
     Word: "chocolate",
-    Relation: "egg,coffee,milk,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,"
+    Relation: "brown,egg,coffee,milk,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,mouth,stomach"
   },
   {
     Word: "butter",
-    Relation: "egg,coffee,milk,chocolate,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,"
+    Relation: "yellow,egg,coffee,milk,chocolate,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,"
   },
   {
     Word: "ham",
@@ -656,7 +655,7 @@ export const WORDS =[
   },
   {
     Word: "cheese",
-    Relation: "egg,coffee,milk,chocolate,butter,ham,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,"
+    Relation: "yellow,egg,coffee,milk,chocolate,butter,ham,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,"
   },
   {
     Word: "bread",
@@ -688,11 +687,11 @@ export const WORDS =[
   },
   {
     Word: "corn",
-    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,"
+    Relation: "yellow,egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,carrot,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,"
   },
   {
     Word: "carrot",
-    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,"
+    Relation: "orange,egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,pasta,soup,hamburger,pizza,potato,rice,meat,salad,tomato,beans,"
   },
   {
     Word: "pasta",
@@ -700,130 +699,109 @@ export const WORDS =[
   },
   {
     Word: "soup",
-    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,hamburger,pizza,potato,rice,meat,salad,tomato,beans,"
+    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,hamburger,pizza,potato,rice,meat,salad,tomato,beans,mouth,stomach"
   },
   {
     Word: "hamburger",
-    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,pizza,potato,rice,meat,salad,tomato,beans,"
+    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,pizza,potato,rice,meat,salad,tomato,beans,mouth,stomach"
   },
   {
     Word: "pizza",
-    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,potato,rice,meat,salad,tomato,beans,"
+    Relation: "egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,potato,rice,meat,salad,tomato,beans,mouth,stomach"
   },
   {
     Word: "head",
-    Relation: "face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "face,ears,eyes,nose,chin,cheeks,forehead,lips,mouth,teeth,tongue,hair,neck,hat,cap"
   },
   {
     Word: "face",
-    Relation: "head,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "head,ears,eyes,nose,chin,cheeks,forehead,lips,mouth,teeth,tongue,hair"
   },
   {
     Word: "ears",
-    Relation: "head,face,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "head,face,eyes,nose,chin,cheeks,forehead,lips,mouth,teeth,tongue"
   },
   {
     Word: "eyes",
-    Relation: "head,face,ears,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "head,face,ears,nose,chin,cheeks,forehead,lips,mouth,teeth,tongue"
   },
   {
     Word: "nose",
-    Relation: "head,face,ears,eyes,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "head,face,ears,eyes,chin,cheeks,forehead,lips,mouth,teeth,tongue"
   },
   {
     Word: "chin",
-    Relation: "head,face,ears,eyes,nose,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "head,face,ears,eyes,nose,cheeks,forehead,lips,mouth,teeth,tongue"
   },
   {
     Word: "cheeks",
-    Relation: "head,face,ears,eyes,nose,chin,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "head,face,ears,eyes,nose,chin,forehead,lips,mouth,teeth,tongue"
   },
   {
     Word: "forehead",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "head,face,ears,eyes,nose,chin,cheeks,lips,mouth,teeth,tongue,hair"
   },
-  {
-    Word: "jaw",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
-  },
-  {
-    Word: "temple",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
-  },
+    
   {
     Word: "lips",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,mouth,teeth,tongue"
   },
   {
     Word: "mouth",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,lips,teeth,tongue,stomach"
   },
   {
     Word: "teeth",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,lips,mouth,tongue"
   },
   {
     Word: "tongue",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,lips,mouth,teeth"
   },
   {
     Word: "hair",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "head,face,forehead,White,Yellow,Blue,Red,Green,Black,Brown,Gold,Silver,Purple,Navy blue,Gray,Orange,Coral,Fuchsia,Lime,Pink,Hot pink,Magenta"
   },
   {
     Word: "neck",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "head,shoulders,arm,scarf,tie"
   },
   {
     Word: "shoulders",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "head,neck,arm,chest,jacket,coat"
   },
   {
     Word: "arm",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "shoulders,hand,chest,leg,feet,shirt"
   },
   {
     Word: "leg",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,finger,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "arm,toe,feet,jeans,pajamas,panties,pants,shoes,shorts,skirt,socks,suit,underpants,uniform"
   },
   {
     Word: "finger",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,toe,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "arm,toe,hand,gloves"
   },
   {
     Word: "toe",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,hand,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "leg,finger,feet,shoes,boots,socks"
   },
   {
     Word: "hand",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,chest,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "arm,finger,feet,gloves"
   },
   {
     Word: "chest",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,breast,feet,brain,heart,lungs,stomach,"
+    Relation: "shoulders,arm,leg,hand,bikini,blouse,coat,dress,hoodie,jacket,pajamas,raincoat,shirt,suit,sweater,sweatshirt,swimming trunks,swimsuit,tie,t-shirt,uniform,vest"
   },
-  {
-    Word: "breast",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,feet,brain,heart,lungs,stomach,"
-  },
+  
   {
     Word: "feet",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,brain,heart,lungs,stomach,"
+    Relation: "leg,toe,hand,shoes,boots,socks"
   },
-  {
-    Word: "brain",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,heart,lungs,stomach,"
-  },
-  {
-    Word: "heart",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,lungs,stomach,"
-  },
-  {
-    Word: "lungs",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,stomach,"
-  },
+    
   {
     Word: "stomach",
-    Relation: "head,face,ears,eyes,nose,chin,cheeks,forehead,jaw,temple,lips,mouth,teeth,tongue,hair,neck,shoulders,arm,leg,finger,toe,hand,chest,breast,feet,brain,heart,lungs,"
+    Relation: "mouth,egg,coffee,milk,chocolate,butter,ham,cheese,bread,toast,pie,chips,soda,cake,ice cream,corn,carrot,pasta,soup,hamburger,potato,rice,meat,salad,tomato,beans,mango,pizza,apple,pineapple,watermelon,banana,green apple,blueberry,strawberry,cherry,clementine,grape,lemon,"
   }
 ]

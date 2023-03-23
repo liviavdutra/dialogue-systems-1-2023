@@ -69,6 +69,7 @@ interface SDSContext {
   word:any;
   unusedWords:any;
   score:any;
+  newUnusedWords:any;
 }
 
 type SDSEvent =

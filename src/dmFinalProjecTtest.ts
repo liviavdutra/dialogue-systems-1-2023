@@ -134,8 +134,14 @@ export function returnWord2(context: SDSContext, userWord: string) { //call func
         const newWord = relations[randomIndex];
         console.log("my variable var is equal to", unusedwords)
         console.log(newWord)
+        if (context.unusedWords.includes(newWord)){
+            return newWord;
+        }
+        else{
+            return returnWord2(context,userWord)
+        }
         //context.unusedWords.splice(context.unusedWords.indexOf(wordFound), 1)
-        return newWord;
+       
     }
 }
 console.log(returnWord2)
